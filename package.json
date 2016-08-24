@@ -1,0 +1,31 @@
+{
+  "name": "d3-symbol-extra",
+  "version": "0.0.1",
+  "description": "Additional D3 symbol types.",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "symbol"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "build/d3-symbol-extra.js",
+  "jsnext:main": "index",
+  "homepage": "https://github.com/YellowTugboat/d3-symbol-extra",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YellowTugboat/d3-symbol-extra.git"
+  },
+  "scripts": {
+    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-symbol-extra.js -- index.js",
+    "test": "tape 'test/**/*-test.js'",
+    "prepublish": "npm run test && uglifyjs build/d3-symbol-extra.js -c -m -o build/d3-symbol-extra.min.js",
+    "postpublish": "zip -j build/d3-symbol-extra.zip -- LICENSE README.md build/d3-symbol-extra.js build/d3-symbol-extra.min.js"
+  },
+  "devDependencies": {
+    "d3-polygon": "1",
+    "d3-shape": "1",
+    "rollup": "0.34",
+    "tape": "4",
+    "uglify-js": "2"
+  }
+}
