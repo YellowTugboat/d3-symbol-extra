@@ -1,6 +1,8 @@
 # d3-symbol-extra
 Additional D3 symbol types.
 
+For use with D3 version 4+.
+
 ## Installing
 
 If you use NPM, `npm install d3-symbol-extra`. Otherwise, download the
