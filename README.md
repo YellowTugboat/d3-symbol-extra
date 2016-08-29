@@ -6,7 +6,7 @@ For use with D3 version 4+.
 ## Installing
 
 If you use NPM, `npm install d3-symbol-extra`. Otherwise, download the
-[latest release](https://github.com/Yellow Tugboat/d3-symbol-extra/releases/latest).
+[latest release](https://github.com/YellowTugboat/d3-symbol-extra/releases/latest).
 AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3` global is exported:
 
 ```html
