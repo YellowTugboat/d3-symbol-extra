@@ -5,7 +5,13 @@
   "keywords": [
     "d3",
     "d3-module",
-    "symbol"
+    "d3-shape",
+    "symbol",
+    "triangle",
+    "diamond",
+    "pentagon",
+    "hexagon",
+    "octagon"
   ],
   "license": "BSD-3-Clause",
   "main": "build/d3-symbol-extra.js",
