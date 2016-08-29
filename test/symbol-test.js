@@ -164,3 +164,35 @@ tape("symbol.type(symbolTriangleRight) generates the expected path", function(te
   test.pathEqual(s(10), "M2.774528,0L-1.387264,2.402811L-1.387264,-2.402811Z");
   test.end();
 });
+
+
+// symbolX
+tape("symbol.type(symbolX) generates a polygon with the specified size", function(test) {
+  var p = polygonContext(), s = shape.symbol().type(extra.symbolX).context(p);
+  s.size(1)(); test.inDelta(p.area(), 1);
+  s.size(240)(); test.inDelta(p.area(), 240);
+  test.end();
+});
+
+tape("symbol.type(symbolX) generates the expected path", function(test) {
+  var s = shape.symbol().type(extra.symbolX).size(function(d) { return d; });
+  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0Z");
+  test.pathEqual(s(10), "M-2,-1L-1,-2L0,-1L1,-2L2,-1L1,0L2,1L1,2L0,1L-1,2L-2,1L-1,0Z");
+  test.end();
+});
+
+
+// Re-test symbolX alias symbolCrossAlt
+tape("symbol.type(symbolCrossAlt) generates a polygon with the specified size", function(test) {
+  var p = polygonContext(), s = shape.symbol().type(extra.symbolCrossAlt).context(p);
+  s.size(1)(); test.inDelta(p.area(), 1);
+  s.size(240)(); test.inDelta(p.area(), 240);
+  test.end();
+});
+
+tape("symbol.type(symbolCrossAlt) generates the expected path", function(test) {
+  var s = shape.symbol().type(extra.symbolCrossAlt).size(function(d) { return d; });
+  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0Z");
+  test.pathEqual(s(10), "M-2,-1L-1,-2L0,-1L1,-2L2,-1L1,0L2,1L1,2L0,1L-1,2L-2,1L-1,0Z");
+  test.end();
+});

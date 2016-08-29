@@ -10,7 +10,7 @@ export {
 } from './src/diamond';
 
 export {
-  pentagon as symbolPentagon
+  pentagon as symbolPentagon,
 } from './src/pentagon';
 
 export {
@@ -22,3 +22,8 @@ export {
   octagon as symbolOctagon,
   octagonAlt as symbolOctagonAlt,
 } from './src/octagon';
+
+export {
+  x as symbolCrossAlt,
+  x as symbolX,
+} from './src/x';

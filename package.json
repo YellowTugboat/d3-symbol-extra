@@ -1,6 +1,6 @@
 {
   "name": "d3-symbol-extra",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Additional D3 symbol types.",
   "keywords": [
     "d3",
@@ -11,7 +11,9 @@
     "diamond",
     "pentagon",
     "hexagon",
-    "octagon"
+    "octagon",
+    "cross",
+    "x"
   ],
   "license": "BSD-3-Clause",
   "main": "build/d3-symbol-extra.js",

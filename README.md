@@ -41,6 +41,7 @@ AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3` global
 <a href="#symbolHexagonAlt"><img src="https://raw.githubusercontent.com/YellowTugboat/d3-symbol-extra/master/img/hexagonAlt.png" width="100" height="100"></a>
 <a href="#symbolOctagon"><img src="https://raw.githubusercontent.com/YellowTugboat/d3-symbol-extra/master/img/octagon.png" width="100" height="100"></a>
 <a href="#symbolOctagonAlt"><img src="https://raw.githubusercontent.com/YellowTugboat/d3-symbol-extra/master/img/octagonAlt.png" width="100" height="100"></a>
+<a href="#symbolX"><img src="https://raw.githubusercontent.com/YellowTugboat/d3-symbol-extra/master/img/x.png" width="100" height="100"></a>
 
 <a name="symbolTriangleDown" href="#symbolTriangleDown">#</a> d3.<b>symbolTriangleDown</b> [<>](https://github.com/YellowTugboat/d3-symbol-extra/blob/master/src/triangle.js "Source")
 
@@ -84,3 +85,7 @@ The octagon symbol type.
 <a name="symbolOctagonAlt" href="#symbolOctagonAlt">#</a> d3.<b>symbolOctagonAlt</b> [<>](https://github.com/YellowTugboat/d3-symbol-extra/blob/master/src/octagon.js "Source")
 
 The octagon symbol type rotated to have horizontal top and bottom edges.
+
+<a name="symbolX" href="#symbolX">#</a> d3.<b>symbolX</b> [<>](https://github.com/YellowTugboat/d3-symbol-extra/blob/master/src/x.js "Source")
+
+The Greek cross symbol type rotated 45&deg;. Alias: d3.symbolCrossAlt. See <a href="https://github.com/d3/d3-shape/blob/master/README.md#symbols">d3.symbolCross</a>.
