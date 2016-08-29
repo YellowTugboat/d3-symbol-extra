@@ -3,6 +3,9 @@ Additional D3 symbol types.
 
 For use with D3 version 4+.
 
+## Demo
+A demo is available [here](https://bl.ocks.org/kbuhrer/858e65ae9840f22da4f51b5e1121e765).
+
 ## Installing
 
 If you use NPM, `npm install d3-symbol-extra`. Otherwise, download the
