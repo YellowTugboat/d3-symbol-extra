@@ -1,6 +1,7 @@
 // Hexagon reference: http://mathworld.wolfram.com/Hexagon.html
 import {tau} from './math';
 import {rotatePoint} from './rotatePoint';
+import {drawPath} from './drawPath';
 
 function sideLength(area) {
   var num = 2 * area;
@@ -15,17 +16,17 @@ function drawBuild(theta) {
     var s = sideLength(size);
     var R = s;
 
-    context.moveTo.apply(context, rotatePoint(R, 0, t));
+    var points = [ rotatePoint(R, 0, t) ];
 
     for (var i = 0; i < 6; ++i) {
       var a = tau * i / 6;
       var x = Math.cos(a) * R;
       var y = Math.sin(a) * R;
 
-      context.lineTo.apply(context, rotatePoint(x, y, t));
+      points.push(rotatePoint(x, y, t));
     }
 
-    context.closePath();
+    drawPath(context, points);
   };
 }
 

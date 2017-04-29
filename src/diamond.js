@@ -1,4 +1,5 @@
 // Direct variation of `symbolDiamond` from d3-shape.
+import {drawPath} from './drawPath';
 
 var tan30 = Math.sqrt(1 / 3);
 var tan30_2 = tan30 * 2;
@@ -8,12 +9,12 @@ export var diamondAlt = {
     var x = Math.sqrt(size / tan30_2);
     var y = x * tan30;
 
-    context.moveTo(0, -y);
-    context.lineTo(x, 0);
-    context.lineTo(0, y);
-    context.lineTo(-x, 0);
-
-    context.closePath();
+    drawPath(context, [
+      [ 0, -y ],
+      [ x, 0 ],
+      [ 0, y ],
+      [ -x, 0 ]
+    ]);
   }
 };
 
@@ -22,11 +23,11 @@ export var diamondSquare = {
     var w = Math.sqrt(size);
     var d = w / 2 * Math.sqrt(2);
 
-    context.moveTo(0, -d);
-    context.lineTo(d, 0);
-    context.lineTo(0, d);
-    context.lineTo(-d, 0);
-
-    context.closePath();
+    drawPath(context, [
+      [ 0, -d ],
+      [ d, 0 ],
+      [ 0, d ],
+      [ -d, 0 ]
+    ]);
   }
 };
