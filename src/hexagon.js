@@ -16,7 +16,7 @@ function drawBuild(theta) {
     var s = sideLength(size);
     var R = s;
 
-    var points = [ rotatePoint(R, 0, t) ];
+    var points = [];
 
     for (var i = 0; i < 6; ++i) {
       var a = tau * i / 6;

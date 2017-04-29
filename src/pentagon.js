@@ -20,7 +20,7 @@ export var pentagon = {
     var R = circumradius(s);
     var theta = -tau / 4; // Rotate 1/4 turn back so the shape is oriented with a point upward.
 
-    var points = [ rotatePoint(R, 0, theta) ];
+    var points = [];
 
     for (var i = 0; i < 5; ++i) {
       var a = tau * i / 5;
