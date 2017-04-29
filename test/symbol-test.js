@@ -48,8 +48,8 @@ tape("symbol.type(symbolHexagon) generates a polygon with the specified size", f
 
 tape("symbol.type(symbolHexagon) generates the expected path", function(test) {
   var s = shape.symbol().type(extra.symbolHexagon).size(function(d) { return d; });
-  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0L0,0Z");
-  test.pathEqual(s(10), "M1.699044,0.980944L1.699044,0.980944L0,1.961887L-1.699044,0.980944L-1.699044,-0.980944L0,-1.961887L1.699044,-0.980944Z");
+  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0Z");
+  test.pathEqual(s(10), "M1.699044,0.980944L0,1.961887L-1.699044,0.980944L-1.699044,-0.980944L0,-1.961887L1.699044,-0.980944Z");
   test.end();
 });
 
@@ -64,8 +64,8 @@ tape("symbol.type(symbolHexagonAlt) generates a polygon with the specified size"
 
 tape("symbol.type(symbolHexagonAlt) generates the expected path", function(test) {
   var s = shape.symbol().type(extra.symbolHexagonAlt).size(function(d) { return d; });
-  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0L0,0Z");
-  test.pathEqual(s(10), "M1.961887,0L1.961887,0L0.980944,1.699044L-0.980944,1.699044L-1.961887,0L-0.980944,-1.699044L0.980944,-1.699044Z");
+  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0Z");
+  test.pathEqual(s(10), "M1.961887,0L0.980944,1.699044L-0.980944,1.699044L-1.961887,0L-0.980944,-1.699044L0.980944,-1.699044Z");
   test.end();
 });
 
@@ -80,8 +80,8 @@ tape("symbol.type(symbolOctagon) generates a polygon with the specified size", f
 
 tape("symbol.type(symbolOctagon) generates the expected path", function(test) {
   var s = shape.symbol().type(extra.symbolOctagon).size(function(d) { return d; });
-  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0Z");
-  test.pathEqual(s(10), "M1.880302,0L1.880302,0L1.329574,1.329574L0,1.880302L-1.329574,1.329574L-1.880302,0L-1.329574,-1.329574L0,-1.880302L1.329574,-1.329574Z");
+  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0Z");
+  test.pathEqual(s(10), "M1.880302,0L1.329574,1.329574L0,1.880302L-1.329574,1.329574L-1.880302,0L-1.329574,-1.329574L0,-1.880302L1.329574,-1.329574Z");
   test.end();
 });
 
@@ -96,8 +96,8 @@ tape("symbol.type(symbolOctagonAlt) generates a polygon with the specified size"
 
 tape("symbol.type(symbolOctagonAlt) generates the expected path", function(test) {
   var s = shape.symbol().type(extra.symbolOctagonAlt).size(function(d) { return d; });
-  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0Z");
-  test.pathEqual(s(10), "M1.737172,0.719560L1.737172,0.719560L0.719560,1.737172L-0.719560,1.737172L-1.737172,0.719560L-1.737172,-0.719560L-0.719560,-1.737172L0.719560,-1.737172L1.737172,-0.719560Z");
+  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0L0,0L0,0Z");
+  test.pathEqual(s(10), "M1.737172,0.719560L0.719560,1.737172L-0.719560,1.737172L-1.737172,0.719560L-1.737172,-0.719560L-0.719560,-1.737172L0.719560,-1.737172L1.737172,-0.719560Z");
   test.end();
 });
 
@@ -112,8 +112,8 @@ tape("symbol.type(symbolPentagon) generates a polygon with the specified size", 
 
 tape("symbol.type(symbolPentagon) generates the expected path", function(test) {
   var s = shape.symbol().type(extra.symbolPentagon).size(function(d) { return d; });
-  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0L0,0Z");
-  test.pathEqual(s(10), "M0,-2.050817L0,-2.050817L1.950443,-0.633737L1.205440,1.659146L-1.205440,1.659146L-1.950443,-0.633737Z");
+  test.pathEqual(s(0), "M0,0L0,0L0,0L0,0L0,0Z");
+  test.pathEqual(s(10), "M0,-2.050817L1.950443,-0.633737L1.205440,1.659146L-1.205440,1.659146L-1.950443,-0.633737Z");
   test.end();
 });
 
