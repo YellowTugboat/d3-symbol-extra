@@ -1,6 +1,6 @@
 // Octagon reference: http://mathworld.wolfram.com/Octagon.html
 import {tau} from './math';
-import {rotatePoint} from './rotatePoint';
+import {generatePoints} from './generatePoints';
 import {drawPath} from './drawPath';
 
 var circumradiusCoeff = 1/2 * Math.sqrt(4 + 2 * Math.sqrt(2)); // ~ 1.3065629648763766
@@ -20,17 +20,7 @@ function drawBuild(theta) {
     var s = sideLength(size);
     var R = circumradius(s);
 
-    var points = [];
-
-    for (var i = 0; i < 8; ++i) {
-      var a = tau * i / 8;
-      var x = Math.cos(a) * R;
-      var y = Math.sin(a) * R;
-
-      points.push(rotatePoint(x, y, t));
-    }
-
-    drawPath(context, points);
+    drawPath(context, generatePoints(8, R, t));
   };
 }
 
